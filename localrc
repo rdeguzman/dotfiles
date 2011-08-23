@@ -1,1 +1,39 @@
+
+# Programming Languages and Frameworks
+export JAVA_HOME=/Library/Java/Home
+export CLANG_HOME="/Developer/clangchecker/"
+export ANDROID_HOME="/Developer/Android-SDK"
+export RAILS_ENV=development
+
+# Databases
+export ORACLE_HOME=/Library/Oracle/instantclient/10.2.0.4
+export TNS_ADMIN=$ORACLE_HOME
+
+export PGSQL_HOME="/usr/local/pgsql"
+export MYSQL_HOME="/usr/local/mysql"
+
+# Web Server
+export APACHE2_HOME="/usr/local/apache2"
+
+# Misc
+export MAGICK_HOME="/usr/local/ImageMagick"
+export SPHINX_HOME="/usr/local/sphinx"
+
+# SCM
+export SVN_EDITOR=vim
+export CVSROOT=:pserver:rupert@cvs.datalink.loc:/cvs/datalink
+export GIT_HOME="/usr/local/git"
+
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+export PATH=$PATH:$ORACLE_HOME
+export PATH=$PATH:$PGSQL_HOME/bin
+export PATH=$PATH:$MYSQL_HOME/bin
+export PATH=$PATH:$CLANG_HOME:$ANDROID_HOME/tools
+export PATH=$PATH:$APACHE2_HOME/bin
+export PATH=$PATH:$MAGICK_HOME/bin
+export PATH=$PATH:$SPHINX_HOME/bin
+
+export LD_LIBRARY_PATH=$ORACLE_HOME:$MYSQL_HOME
+export DYLD_LIBRARY_PATH=$ORACLE_HOME:$MYSQL_HOME:$MAGICK_HOME/lib
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

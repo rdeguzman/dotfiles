@@ -19,10 +19,13 @@ xcuserdata
 profile
 *.moved-aside
 
-#Rails
-vendor/cache/*
-config/database.yml
-config/*.sphinx.conf
-log/*
+#RubyOnRails
+.bundle
+.project
+db/*.sqlite3
+log/*.log
+*.log
+/tmp/
 tmp/**/*
 *.tmproj
+doc/

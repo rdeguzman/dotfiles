@@ -13,16 +13,19 @@ build/*
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-#*.xcworkspace
+*.xcworkspace
 !default.xcworkspace
 xcuserdata
 profile
 *.moved-aside
 
 #Rails
-vendor/cache/*
-config/database.yml
-config/*.sphinx.conf
+Gemfile.lock
+vendor
+config/development.sphinx.conf
 log/*
 tmp/**/*
+tmp/*
 *.tmproj
+.idea
+.bundle

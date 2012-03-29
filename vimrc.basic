@@ -1,0 +1,11 @@
+set nobackup
+set nowritebackup
+set history=50
+set ts=2
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set laststatus=2
+set nu
+syntax on
+set hlsearch

@@ -7,6 +7,9 @@ alias l="ls -lAh"
 alias ll="ls -l"
 alias la='ls -A'
 
+#bundle
+alias b="bundle exec"
+
 # git
 alias gpl='git pull'
 alias gplr='git pull --rebase'
@@ -21,14 +24,14 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 
 # rails
-alias sc='script/console'
-alias ss='script/server'
-alias sg='script/generate'
-alias a='autotest -rails'
+alias renv='echo $RAILS_ENV'
+alias renv_dev='export RAILS_ENV=development'
+alias renv_test='export RAILS_ENV=test'
+alias rc='rails console'
+alias rs='rails server'
+alias rg='rails generate'
 alias tlog='tail -f log/development.log'
-alias scaffold='script/generate nifty_scaffold'
-alias migrate='rake db:migrate db:test:clone'
-alias rst='touch tmp/restart.txt'
+alias rmigrate='rake db:migrate'
 
 # commands starting with % for pasting from web
 alias %=' '

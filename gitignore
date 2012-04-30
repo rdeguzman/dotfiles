@@ -31,3 +31,15 @@ tmp/*
 *.tmproj
 .idea
 .bundle
+
+#Python
+*.pyc
+*.pyo
+*.mo
+*.egg-info
+*.egg
+*.EGG
+*.EGG-INFO
+eggs
+fake-eggs
+parts

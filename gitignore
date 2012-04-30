@@ -20,6 +20,7 @@ profile
 *.moved-aside
 
 #RubyOnRails
+#Gemfile.lock - DO NOT COMMIT
 .bundle
 .project
 db/*.sqlite3

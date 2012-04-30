@@ -30,7 +30,7 @@ alias renv_test='export RAILS_ENV=test'
 alias rc='rails console'
 alias rs='rails server'
 alias rg='rails generate'
-alias tlog='tail -f log/development.log'
+alias rlog='tail -f log/development.log'
 alias rmigrate='rake db:migrate'
 
 # commands starting with % for pasting from web

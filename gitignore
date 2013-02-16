@@ -44,3 +44,14 @@ tmp/*
 eggs
 fake-eggs
 parts
+
+#Android
+.idea
+.metadata
+*.class
+*.apk
+*.ap_
+*.dex
+bin/
+gen/
+local.properties

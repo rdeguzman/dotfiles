@@ -1,6 +1,11 @@
 
 # Programming Languages and Frameworks
-export JAVA_HOME=/Library/Java/Home
+# Java may be installed in different paths:
+# /System/Library/Java/JavaVirtualMachines
+# /Library/Java/JavaVirtualMachines
+# Note these are not single quotes
+export JAVA_HOME=`/usr/libexec/java_home`
+
 export CLANG_HOME="/Developer/clangchecker/"
 export ANDROID_HOME="/Developer/Android-SDK"
 export RAILS_ENV=development

@@ -5,9 +5,8 @@
 # /Library/Java/JavaVirtualMachines
 # Note these are not single quotes
 export JAVA_HOME=`/usr/libexec/java_home`
+export ANDROID_SDK_HOME="/Developer/android-sdk-macosx"
 
-export CLANG_HOME="/Developer/clangchecker/"
-export ANDROID_HOME="/Developer/Android-SDK"
 export RAILS_ENV=development
 
 # Databases
@@ -27,7 +26,7 @@ export CVSROOT=:pserver:rupert@cvs.datalink.loc:/cvs/datalink
 export GIT_HOME="/usr/local/git"
 
 export PATH=$PATH:$ORACLE_HOME
-export PATH=$PATH:$CLANG_HOME:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_SDK_HOME/tools
 export PATH=$PATH:$APACHE2_HOME/bin
 export PATH=$PATH:$MAGICK_HOME/bin
 export PATH=$PATH:$SPHINX_HOME/bin

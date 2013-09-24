@@ -30,7 +30,6 @@ log/*.log
 tmp/**/*
 tmp/*
 *.tmproj
-.idea
 .bundle
 
 #Python

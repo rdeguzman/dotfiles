@@ -46,16 +46,14 @@ fake-eggs
 parts
 
 #Android
-.idea
 .metadata
 *.class
 *.apk
 *.ap_
 *.dex
-*.iml
-*.ipr
 *.iws
 bin/
 gen/
+out/
 local.properties
 

@@ -56,3 +56,6 @@ gen/
 out/
 local.properties
 
+#IntellJ Idea
+.idea/workspace.xml
+.idea/tasks.xml

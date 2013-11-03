@@ -3086,7 +3086,7 @@
 				<real>1</real>
 			</dict>
 			<key>Bonjour Service Address</key>
-			<string>192.168.0.16</string>
+			<string>192.168.0.13</string>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -3094,7 +3094,7 @@
 			<key>Columns</key>
 			<integer>151</integer>
 			<key>Command</key>
-			<string>ssh 192.168.0.16</string>
+			<string>ssh 192.168.0.13</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -3122,7 +3122,7 @@
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
-			<string>rupert-imac</string>
+			<string>RUPERT’s MacBook Pro</string>
 			<key>Disable Printing</key>
 			<false/>
 			<key>Disable Smcup Rmcup</key>
@@ -3141,7 +3141,7 @@
 				<real>0.76923078298568726</real>
 			</dict>
 			<key>Guid</key>
-			<string>13209A77-B21B-4FBA-A6BF-F5FF3FCE4D63</string>
+			<string>BF048579-C3A7-4825-8C17-EF93EEBD939D</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -3386,7 +3386,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>rupert-imac</string>
+			<string>RUPERT’s MacBook Pro</string>
 			<key>Non Ascii Font</key>
 			<string>Monaco 10</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -3746,7 +3746,7 @@
 				<real>1</real>
 			</dict>
 			<key>Bonjour Service Address</key>
-			<string>192.168.0.13</string>
+			<string>192.168.0.16</string>
 			<key>Character Encoding</key>
 			<integer>4</integer>
 			<key>Close Sessions On End</key>
@@ -3754,7 +3754,7 @@
 			<key>Columns</key>
 			<integer>151</integer>
 			<key>Command</key>
-			<string>ssh 192.168.0.13</string>
+			<string>ssh 192.168.0.16</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -3782,7 +3782,7 @@
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
-			<string>RUPERT’s MacBook Pro</string>
+			<string>rupert-imac</string>
 			<key>Disable Printing</key>
 			<false/>
 			<key>Disable Smcup Rmcup</key>
@@ -3801,7 +3801,7 @@
 				<real>0.76923078298568726</real>
 			</dict>
 			<key>Guid</key>
-			<string>A2E2A93D-1490-44F1-BFDC-9251D06BCA00</string>
+			<string>AF455707-14DC-4FB0-8075-75E560575F28</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -4046,7 +4046,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>RUPERT’s MacBook Pro</string>
+			<string>rupert-imac</string>
 			<key>Non Ascii Font</key>
 			<string>Monaco 10</string>
 			<key>Non-ASCII Anti Aliased</key>

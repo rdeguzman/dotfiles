@@ -967,6 +967,8 @@
 	<false/>
 	<key>HighlightTabLabels</key>
 	<true/>
+	<key>HotKeyBookmark</key>
+	<string>34716D8F-F945-4C4F-ACB3-B059A23BA284</string>
 	<key>HotKeyTogglesWindow</key>
 	<false/>
 	<key>Hotkey</key>
@@ -1442,144 +1444,22 @@
 	<true/>
 	<key>MaxVertically</key>
 	<true/>
-	<key>NSColorPanelMode</key>
-	<string>7</string>
-	<key>NSColorPanelVisibleSwatchRows</key>
-	<integer>1</integer>
-	<key>NSColorPickerPageableNameListDefaults</key>
-	<string>1System</string>
-	<key>NSColorPickerSlidersDefaults</key>
-	<string>1</string>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 1</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
-	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{518, 402}</string>
-	<key>NSNavSidebarWidth</key>
-	<real>120</real>
+	<string>~/Documents</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
-	<key>NSTableView Columns BookmarksView5</key>
-	<array>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErBE5hbWWG
-		</data>
-		<string>141</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErB0NvbW1hbmSG
-		</data>
-		<string>218</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErCFNob3J0Y3V0hg==
-		</data>
-		<string>29</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErEFRlcm1pbmFsIFByb2ZpbGWG
-		</data>
-		<string>87</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErD0Rpc3BsYXkgUHJvZmlsZYY=
-		</data>
-		<string>86</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErEEtleWJvYXJkIFByb2ZpbGWG
-		</data>
-		<string>118</string>
-	</array>
-	<key>NSTableView Columns NSNavOutlineColumnSettings.v1</key>
-	<array>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErHE5TTmF2RGlzcGxheU5hbWVGaWxlUHJvcGVydHmG
-		</data>
-		<string>225</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErGE5TTmF2TW9kRGF0ZUZpbGVQcm9wZXJ0eYY=
-		</data>
-		<string>145</string>
-	</array>
-	<key>NSTableView Hidden Columns BookmarksView5</key>
-	<array/>
-	<key>NSTableView Hidden Columns NSNavOutlineColumnSettings.v1</key>
-	<array/>
-	<key>NSTableView Sort Ordering BookmarksView5</key>
-	<array/>
-	<key>NSTableView Sort Ordering NSNavOutlineColumnSettings.v1</key>
-	<array>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErHE5TTmF2RGlzcGxheU5hbWVGaWxlUHJvcGVydHmG
-		</data>
-		<true/>
-	</array>
-	<key>NSToolbar Configuration Terminal Toolbar</key>
-	<dict>
-		<key>TB Default Item Identifiers</key>
-		<array>
-			<string>New</string>
-			<string>Info</string>
-			<string>Close</string>
-			<string>Command</string>
-			<string>Profiles</string>
-		</array>
-		<key>TB Display Mode</key>
-		<integer>2</integer>
-		<key>TB Icon Size Mode</key>
-		<integer>2</integer>
-		<key>TB Is Shown</key>
-		<integer>0</integer>
-		<key>TB Item Identifiers</key>
-		<array>
-			<string>New</string>
-			<string>Info</string>
-			<string>Close</string>
-			<string>Command</string>
-		</array>
-		<key>TB Size Mode</key>
-		<integer>1</integer>
-	</dict>
-	<key>NSWindow Frame Bookmarks</key>
-	<string>118 547 773 280 0 0 1680 1028 </string>
-	<key>NSWindow Frame Config Panel</key>
-	<string>825 352 273 585 0 0 1680 1028 </string>
-	<key>NSWindow Frame NSColorPanel</key>
-	<string>1022 341 214 309 0 0 2560 1418 </string>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>1122 553 445 270 0 0 1680 1028 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>604 829 924 485 0 0 2560 1418 </string>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>1088 981 384 129 0 0 2560 1418 </string>
-	<key>NSWindow Frame SUUpdateAlertFrame</key>
-	<string>557 485 566 395 0 0 1680 1028 </string>
+	<string>488 315 924 485 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1288 84 1083 661 0 0 2560 1418 </string>
+	<string>294 256 1069 661 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1280 749 1083 661 0 0 2560 1418 </string>
+	<string>0 61 838 967 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1280 44 1280 687 0 0 2560 1418 </string>
-	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1393 120 1083 1256 0 0 2560 1418 </string>
-	<key>NSWindow Frame iTerm Window 4</key>
-	<string>342 452 1083 661 0 0 2560 1418 </string>
-	<key>NSWindow Frame iTerm Window 5</key>
-	<string>514 264 781 385 0 0 1680 1028 </string>
-	<key>NSWindow Frame iTerm Window 6</key>
-	<string>639 263 725 529 0 0 1680 1028 </string>
-	<key>NSWindow Frame iTerm Window 7</key>
-	<string>1680 521 725 529 1680 0 1680 1050 </string>
+	<string>250 73 570 451 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -3141,7 +3021,7 @@
 				<real>0.76923078298568726</real>
 			</dict>
 			<key>Guid</key>
-			<string>BF048579-C3A7-4825-8C17-EF93EEBD939D</string>
+			<string>90E045D0-F34F-41B1-865D-09BC31B49821</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -3801,7 +3681,7 @@
 				<real>0.76923078298568726</real>
 			</dict>
 			<key>Guid</key>
-			<string>AF455707-14DC-4FB0-8075-75E560575F28</string>
+			<string>46C9A837-7050-45DC-A644-02A06642B792</string>
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
@@ -4223,6 +4103,8 @@
 			<string></string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -4234,7 +4116,7 @@
 	<key>PassOnControlClick</key>
 	<false/>
 	<key>PasteFromClipboard</key>
-	<true/>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -4269,11 +4151,11 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/rupert/.dotfiles/iTerm2</string>
+	<string>/Users/rupert/.dotfiles/iTerm2/</string>
 	<key>PromptOnClose</key>
 	<false/>
 	<key>PromptOnQuit</key>
-	<true/>
+	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
 	<key>RefreshRate</key>
@@ -4283,15 +4165,15 @@
 	<key>RightOption</key>
 	<integer>3</integer>
 	<key>SUAutomaticallyUpdate</key>
-	<false/>
-	<key>SUCheckAtStartup</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedURL</key>
 	<string>http://iterm2.com/appcasts/testing.xml</string>
+	<key>SUHasLaunchedBefore</key>
+	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-11-03T20:31:30Z</date>
+	<date>2013-11-03T21:42:14Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>

@@ -32,6 +32,15 @@ task :install do
   end
 end
 
+task :clean do
+  Dir['*'].each do |file|
+    next if %w[Rakefile README.rdoc LICENSE].include? file
+    
+    puts "rm $HOME/.#{file.sub('.erb', '')}"
+    system %Q{rm -rf "$HOME/.#{file.sub('.erb', '')}"}
+  end
+end
+
 def replace_file(file)
   system %Q{rm -rf "$HOME/.#{file.sub('.erb', '')}"}
   link_file(file)

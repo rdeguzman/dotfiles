@@ -1,0 +1,17 @@
+#!/bin/sh
+ 
+. /etc/rc.common
+
+StartService ()
+{
+  echo "Starting PostGres 9.3.1"
+  /usr/local/postgres93/bin/pg_ctl -o -i -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+}
+ 
+StopService ()
+{
+  echo "Stopping PostGres 9.3.1"
+  /usr/local/postgres93/bin/pg_ctl -o -i -D /usr/local/var/postgres stop -s -m fast
+}
+ 
+RunService "$1"

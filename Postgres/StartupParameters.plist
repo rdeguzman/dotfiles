@@ -1,0 +1,12 @@
+{
+  Description     = "PostGres 9.3.1 Server";
+  Provides        = ("PostGres9.3.1");
+  Requires        = ();
+  OrderPreference = "None";
+  Messages =
+  {
+    start = "Starting PostGres9.3.1 Server";
+    stop  = "Stopping PostGres9.3.1 Server";
+  };
+}
+

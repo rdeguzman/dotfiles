@@ -25,6 +25,7 @@ alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gchangelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
 alias grollback='git reset --soft HEAD~1'
+alias gsmflush='git submodule foreach git reset --hard'
 
 # rails
 alias renv='echo $RAILS_ENV'

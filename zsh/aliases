@@ -1,3 +1,6 @@
+# exit
+alias x='exit'
+
 # cd
 alias ..='cd ..'
 
@@ -7,6 +10,7 @@ alias l="ls -lAh"
 alias ll="ls -l"
 alias la='ls -A'
 
+# paging
 alias less="less -R"
 
 #bundle

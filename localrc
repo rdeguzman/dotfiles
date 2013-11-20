@@ -31,6 +31,9 @@ export PATH=$PATH:$APACHE2_HOME/bin
 export PATH=$PATH:$MAGICK_HOME/bin
 export PATH=$PATH:$SPHINX_HOME/bin
 
+# node.js modules
+export PATH=$PATH:/usr/local/lib/node_modules
+
 #export LD_LIBRARY_PATH=$ORACLE_HOME
 #export DYLD_LIBRARY_PATH=$ORACLE_HOME:$MAGICK_HOME/lib
 

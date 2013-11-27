@@ -1,1 +1,1 @@
-cd ~/code/$1;
+cat ~/.dotfiles/cheat_commands/$1

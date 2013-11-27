@@ -31,6 +31,8 @@ export PATH=$PATH:$APACHE2_HOME/bin
 export PATH=$PATH:$MAGICK_HOME/bin
 export PATH=$PATH:$SPHINX_HOME/bin
 
+export PATH=$PATH:~/.dotfiles/cheat_commands/
+
 # node.js modules
 export PATH=$PATH:/usr/local/lib/node_modules
 

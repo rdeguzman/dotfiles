@@ -1,1 +1,7 @@
-cat ~/.dotfiles/cheat_commands/$1
+ROOT_PATH="$HOME/.dotfiles/cheat_commands"
+if [ $# -eq 0 ]; then
+  echo "Displaying available cheat commands"
+  ls -l $ROOT_PATH
+else
+  cat $ROOT_PATH/$1
+fi 

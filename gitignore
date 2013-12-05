@@ -42,7 +42,7 @@ tmp/*
 *.EGG-INFO
 eggs
 fake-eggs
-parts
+#parts
 
 #Android
 .metadata

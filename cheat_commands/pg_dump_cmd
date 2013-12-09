@@ -1,0 +1,1 @@
+pg_dump --host=127.0.0.1 --port=5432 --username=dbadmin --format=custom --file="/path/to/db.backup" database_name

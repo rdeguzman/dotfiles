@@ -1,7 +1,15 @@
+export CLICOLOR=1
+#export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# Tell grep to highlight matches
+export GREP_OPTIONS='--color=auto'
+
+autoload colors && colors
+
 if [[ -n $SSH_CONNECTION ]]; then
   export PS1='%m:%3~$(git_info_for_prompt)%# '
 else
-  export PS1='%3~$(git_info_for_prompt)%# '
+  export PS1='$fg[red]%m$reset_color:$fg[yellow]%3~$fg[magenta]$(git_info_for_prompt)$reset_color%# '
 fi
 
 export EDITOR='vim'

@@ -36,9 +36,9 @@ alias gsmflush='git submodule foreach git reset --hard'
 
 # rails
 alias renv='echo $RAILS_ENV'
-alias renvd='export RAILS_ENV=development'
-alias renvt='export RAILS_ENV=test'
-alias renvp='export RAILS_ENV=production'
+alias renvd='export RAILS_ENV=development;echo "Rails env set to $RAILS_ENV"'
+alias renvt='export RAILS_ENV=test;echo "Rails env set to $RAILS_ENV"'
+alias renvp='export RAILS_ENV=production;echo "Rails env set to $RAILS_ENV"'
 
 # commands starting with % for pasting from web
 alias %=' '

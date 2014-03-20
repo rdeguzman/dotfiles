@@ -47,8 +47,8 @@ fake-eggs
 #Android
 .metadata
 *.class
-*.apk
-*.ap_
+#*.apk
+#*.ap_
 *.dex
 *.iws
 bin/

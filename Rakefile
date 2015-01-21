@@ -1,7 +1,7 @@
 require 'rake'
 require 'erb'
 
-exclude_stuff=%w[Rakefile README.rdoc LICENSE Android cheat_commands iTerm2 Postgres RubyMine]
+exclude_stuff=%w[Rakefile README.md LICENSE Android cheat_commands iTerm2 Postgres RubyMine]
 
 desc "install the dot files into user's home directory"
 task :install do

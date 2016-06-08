@@ -7,7 +7,7 @@
 export JAVA_HOME=`/usr/libexec/java_home`
 export ANDROID_HOME="/Developer/android-sdk-macosx"
 
-export RAILS_ENV=development
+#export RAILS_ENV=development
 
 # Databases
 export ORACLE_HOME=/Library/Oracle/instantclient/10.2.0.4

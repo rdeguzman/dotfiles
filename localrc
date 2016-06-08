@@ -7,8 +7,6 @@
 export JAVA_HOME=`/usr/libexec/java_home`
 export ANDROID_HOME="/Developer/android-sdk-macosx"
 
-#export RAILS_ENV=development
-
 # Databases
 export ORACLE_HOME=/Library/Oracle/instantclient/10.2.0.4
 export TNS_ADMIN=$ORACLE_HOME
@@ -35,8 +33,5 @@ export PATH=$PATH:~/.dotfiles/cheat_commands/
 
 # node.js modules
 export PATH=$PATH:/usr/local/lib/node_modules
-
-#export LD_LIBRARY_PATH=$ORACLE_HOME
-#export DYLD_LIBRARY_PATH=$ORACLE_HOME:$MAGICK_HOME/lib
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

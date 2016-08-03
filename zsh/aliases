@@ -18,14 +18,13 @@ alias b="bundle exec"
 
 # git
 alias gpl='git pull'
-alias gplr='git pull --rebase origin master'
+alias gplrm='git pull --rebase origin master'
+alias gplrd='git pull --rebase origin develop'
 alias gplrb='git pull --rebase origin $1'
 alias gp='git push'
 alias gpob='git push origin $1'
 alias gpom='git push origin master'
-alias gpod='git push origin devel'
-alias gpmm='git push mightymouse master'
-alias gpmd='git push mightymouse devel'
+alias gpod='git push origin develop'
 alias gd='git diff'
 alias gc='git commit'
 alias gca='git commit --amend'

@@ -1,0 +1,48 @@
+# exit
+alias x='exit'
+
+# cd
+alias ..='cd ..'
+
+# ls
+alias ls="ls -F"
+alias l="ls -lAh"
+alias ll="ls -l"
+alias la='ls -A'
+
+# paging
+alias less="less -R"
+
+#bundle
+alias b="bundle exec"
+
+# git
+alias gpl='git pull'
+alias gplrm='git pull --rebase origin master'
+alias gplrd='git pull --rebase origin develop'
+alias gplrb='git pull --rebase origin $1'
+alias gp='git push'
+alias gpob='git push origin $1'
+alias gpom='git push origin master'
+alias gpomt='git push origin master --tags'
+alias gpod='git push origin develop'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit --amend'
+alias ga='git add'
+alias gco='git checkout'
+alias gb='git branch'
+alias gs='git status'
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias gchangelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
+alias greset='git reset --hard'
+alias grollback='git reset --soft HEAD~1'
+alias gsmflush='git submodule foreach git reset --hard'
+#alias glog='git log --graph --decorate --oneline'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+
+# rails
+alias renv='echo $RAILS_ENV'
+alias renvd='export RAILS_ENV=development;echo "Rails env set to $RAILS_ENV"'
+alias renvt='export RAILS_ENV=test;echo "Rails env set to $RAILS_ENV"'
+alias renvp='export RAILS_ENV=production;echo "Rails env set to $RAILS_ENV"'

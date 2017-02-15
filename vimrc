@@ -223,10 +223,11 @@ endfunction
 :inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 :set dictionary="/usr/dict/words"
 
-"Do not UNCOMMENT so you can remember on doing 
-"To map: imap ;f foobar => Type f; foobar will be inserted
-"RSPEC Where ! is execute command. % is the current file
-":!rspec %
+" Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
+call plug#begin('~/.vim/plugged')
 
-"Map RSPEC test to ,t
-":map ,t :w\|!rspec %<cr>
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+" Initialize plugin system
+call plug#end()

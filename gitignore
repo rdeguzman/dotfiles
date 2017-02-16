@@ -19,3 +19,6 @@ tmp/*
 
 #Project specific
 /data
+
+vim/.netwrhist
+vim/plugged

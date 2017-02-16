@@ -1,4 +1,5 @@
 " based on http://github.com/jferris/config_files/blob/master/vimrc
+set t_Co=256
 
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -198,3 +199,6 @@ call plug#end()
 " Color scheme
 "set background=dark
 "colorscheme solarized
+
+"vim-airline
+:let g:airline_theme='solarized'

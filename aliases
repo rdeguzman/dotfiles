@@ -52,3 +52,7 @@ alias renvp='export RAILS_ENV=production;echo "Rails env set to $RAILS_ENV"'
 # zeus
 alias zstart='zeus start'
 alias zserver='zeus server -b 0.0.0.0'
+
+# jump
+alias ji='cd /Projects/rails/iris'
+alias jp='cd /Projects/rails/perseus'

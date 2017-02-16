@@ -192,6 +192,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'skwp/vim-colors-solarized'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Initialize plugin system
 call plug#end()

@@ -201,3 +201,9 @@ call plug#end()
 
 "vim-airline
 :let g:airline_theme='solarized'
+
+if has("gui_running")
+  :set guifont=Monaco:h18
+  colorscheme solarized
+endif
+

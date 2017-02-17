@@ -56,3 +56,5 @@ alias zserver='zeus server -b 0.0.0.0'
 # jump
 alias ji='cd /Projects/rails/iris'
 alias jp='cd /Projects/rails/perseus'
+alias jpp='cd /Projects/rails/poseidon'
+alias jd='cd /Projects/rails/dfms-rails'

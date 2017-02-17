@@ -191,6 +191,7 @@ Plug 'skwp/vim-colors-solarized'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdtree'
 
 " Initialize plugin system
 call plug#end()

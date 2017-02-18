@@ -42,19 +42,6 @@ set expandtab
 " Always display the status line
 set laststatus=2
 
-" \ is the leader character
-let mapleader = ","
-
-" Quicksave
-noremap <Leader>w :update<CR>
-noremap <Leader>q :q!<CR>
-noremap <Leader>Q :qa!<CR>
-
-" Tabs
-noremap <Leader>t :tabnew<CR>
-noremap <Leader>n <esc>:tabprevious<CR>
-noremap <Leader>m <esc>:tabnext<CR>
-
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 
@@ -72,11 +59,28 @@ set complete=.,t
 set ignorecase
 set smartcase
 
+" \ is the leader character
+let mapleader = ","
+
+" Quicksave
+noremap <Leader>w :update<CR>
+noremap <Leader>q :q!<CR>
+noremap <Leader>Q :qa!<CR>
+
+" Tabs
+noremap <Leader>t :tabnew<CR>
+noremap <Leader>n <esc>:tabprevious<CR>
+noremap <Leader>m <esc>:tabnext<CR>
+
 " Remap Splits
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" Indents
+vnoremap < <gv
+vnoremap > >gv
 
 " Open splits more natural below and right
 set splitbelow

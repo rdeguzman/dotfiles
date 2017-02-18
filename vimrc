@@ -63,8 +63,8 @@ set smartcase
 let mapleader = ","
 
 " Quicksave
-noremap <Leader>w :update<CR>
-noremap <Leader>q :q!<CR>
+noremap <Leader>s :update<CR>
+noremap <Leader>w :q!<CR>
 noremap <Leader>Q :qa!<CR>
 
 " Tabs

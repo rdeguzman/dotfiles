@@ -1,12 +1,19 @@
 " based on http://github.com/jferris/config_files/blob/master/vimrc
 set t_Co=256
 
+"AutoLoad VIM
+autocmd! bufwritepost .vimrc source %
+
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
+" Mouse Settings and backspacing over everything in insert mode
+set mouse=a
+set backspace=2
+
+" Allows to copy and paste from vim to another application
+set clipboard=unnamed
 
 set nobackup
 set nowritebackup
@@ -38,13 +45,18 @@ set laststatus=2
 " \ is the leader character
 let mapleader = ","
 
-" Display extra whitespace
-" set list listchars=tab:»·,trail:·
+" Quicksave
+noremap <Leader>w :update<CR>
+noremap <Leader>q :q!<CR>
+noremap <Leader>Q :qa!<CR>
 
-" Local config
-if filereadable(".vimrc.local")
-  source .vimrc.local
-endif
+" Tabs
+noremap <Leader>t :tabnew<CR>
+noremap <Leader>n <esc>:tabprevious<CR>
+noremap <Leader>m <esc>:tabnext<CR>
+
+" Display extra whitespace
+set list listchars=tab:»·,trail:·
 
 " Numbers
 set number
@@ -93,4 +105,3 @@ if has("gui_running")
   :set guifont=Monaco:h18
   colorscheme solarized
 endif
-

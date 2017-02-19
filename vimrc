@@ -72,6 +72,10 @@ noremap <Leader>t :tabnew<CR>
 noremap <Leader>n <esc>:tabprevious<CR>
 noremap <Leader>m <esc>:tabnext<CR>
 
+" Files and Search
+noremap <Leader>f :Files<CR>
+noremap <Leader>a :Ag<CR>
+
 " Remap Splits
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>

@@ -1,4 +1,3 @@
-" based on http://github.com/jferris/config_files/blob/master/vimrc
 set t_Co=256
 
 "AutoLoad VIM
@@ -126,6 +125,7 @@ Plug 'skwp/vim-colors-solarized'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
+Plug 'vim-syntastic/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -139,3 +139,12 @@ if has("gui_running")
   :set guifont=Monaco:h18
   colorscheme solarized
 endif
+
+" syntastic
+"let g:syntastic_shell = "/bin/zsh"
+"let g:syntastic_debug = 9
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+"let g:syntastic_ruby_exec = "/Users/rupert/.rvm/rubies/ruby-2.3.1/bin/ruby"
+"let g:syntastic_ruby_mri_exec = "/Users/rupert/.rvm/rubies/ruby-2.3.1/bin/ruby"

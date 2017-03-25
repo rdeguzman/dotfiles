@@ -84,6 +84,10 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 " <C-W> = #Resize splits equally
 
+" Syntastic open Location window and go back
+noremap <Leader>e :lopen<CR><C-W><C-K><CR>
+noremap <Leader>E :lclose<CR>
+
 " Indents
 vnoremap < <gv
 vnoremap > >gv
@@ -146,5 +150,5 @@ endif
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-"let g:syntastic_ruby_exec = "/Users/rupert/.rvm/rubies/ruby-2.3.1/bin/ruby"
-"let g:syntastic_ruby_mri_exec = "/Users/rupert/.rvm/rubies/ruby-2.3.1/bin/ruby"
+let g:syntastic_ruby_exec = "/Users/rupert/.rvm/rubies/ruby-2.3.1/bin/ruby"
+let g:syntastic_ruby_mri_exec = "/Users/rupert/.rvm/rubies/ruby-2.3.1/bin/ruby"

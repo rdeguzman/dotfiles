@@ -132,6 +132,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-syntastic/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'albfan/nerdtree-git-plugin'
 
 " Initialize plugin system
 call plug#end()

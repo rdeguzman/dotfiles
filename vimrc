@@ -93,8 +93,8 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Enable / Disable mouse and numbers for copy and paste to other applications
-noremap <Leader>( :set mouse=""<CR>:set nonu<CR>
-noremap <Leader>) :set mouse=a<CR>:set nu<CR>
+noremap <Leader>( :set mouse=""<CR>:set nonu<CR>:GitGutterDisable<CR>
+noremap <Leader>) :set mouse=a<CR>:set nu<CR>:GitGutterEnable<CR>
 
 " Open splits more natural below and right
 set splitbelow

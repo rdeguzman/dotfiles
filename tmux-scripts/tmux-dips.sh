@@ -3,7 +3,6 @@ tmux new-session -s dips -n "dips-client" -d
 tmux send-keys -t dips:1 "cd /Projects/dips/dips-client" Enter "vim" Enter ":NERDTree" Enter
 
 tmux new-window -t dips:2 -n "npm start"
-#tmux send-keys -t dips:2 "cd /Projects/dips/dips-client" Enter "npm start" Enter "y" Enter # Too slow
 tmux send-keys -t dips:2 "cd /Projects/dips/dips-client" Enter "npm start"
 
 tmux new-window -t dips:3 -n "dips-api"

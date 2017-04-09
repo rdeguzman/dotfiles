@@ -24,7 +24,7 @@ export PATH=$PATH:~/.dotfiles/tmux-scripts/
 export PATH=$PATH:/usr/local/lib/node_modules
 
 # yarn global node_modules
-export PATH=$PATH:$(yarn global bin)
+#export PATH=$PATH:$(yarn global bin)
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 

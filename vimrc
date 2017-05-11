@@ -72,6 +72,9 @@ noremap <Leader>Q :qa!<CR>
 "noremap <Leader>m <esc>:tabnext<CR>
 
 noremap <Leader>n :NERDTree<CR>
+"let g:NERDTreeMouseMode = 3 to get single-click behaviour.
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['.git$[[dir]]', '.swp']
 
 " Files and Search
 noremap <Leader>f :Files<CR>

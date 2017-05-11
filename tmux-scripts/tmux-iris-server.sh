@@ -15,15 +15,17 @@ tmux select-pane -t 2
 sleep .3
 tmux send-keys "cd /Projects/rails/iris/" Enter "npm start"
 
-# Rails Server
-tmux select-pane -t 3
-sleep .3
-tmux send-keys "cd /Projects/dboxes" Enter "vagrant ssh" Enter "cd /var/www/rails/iris" Enter "sleep 5" Enter "zserver" Enter
-
 # ZStart Pane
 tmux select-pane -t 1
 sleep .3
-tmux send-keys "cd /Projects/dboxes" Enter "vagrant ssh" Enter "cd /var/www/rails/iris" Enter "zstart" Enter
+tmux send-keys "cd /Projects/dboxes" Enter "vagrant ssh" Enter 
+tmux send-keys "cd /var/www/rails/iris" Enter "ZEUSSOCK=/tmp/.zeus.sock zeus start" Enter
+
+# Rails Server
+tmux select-pane -t 3
+sleep 5
+tmux send-keys "cd /Projects/dboxes" Enter "vagrant ssh" Enter 
+tmux send-keys "cd /var/www/rails/iris" Enter "zeus server -b 0.0.0.0" Enter
 
 tmux new-window -t iris:2 -n "zeus test spec"
 tmux send-keys -t iris:2 "cd /Projects/dboxes" Enter "vagrant ssh" Enter "cd /var/www/rails/iris" Enter "sleep 5" Enter "zeus test spec"

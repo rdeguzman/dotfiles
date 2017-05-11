@@ -1,5 +1,9 @@
 #!/bin/zsh
-tmux new-session -s iris -n "iris" -d
+VAGRANTFILE="/Projects/dboxes"
+VAGRANT_PROJECT_DIR="/var/www/rails"
+PROJECT_NAME="iris"
+
+tmux new-session -s $PROJECT_NAME -n "$PROJECT_NAME" -d
 
 #|------------------|-----------------------------------|
 #|                  |                                   |
@@ -13,26 +17,28 @@ tmux split-window -v -p 50
 # NPM Start
 tmux select-pane -t 2
 sleep .3
-tmux send-keys "cd /Projects/rails/iris/" Enter "npm start"
+tmux send-keys "cd /Projects/rails/$PROJECT_NAME/" Enter "npm start"
 
 # ZStart Pane
 tmux select-pane -t 1
 sleep .3
-tmux send-keys "cd /Projects/dboxes" Enter "vagrant ssh" Enter 
-tmux send-keys "cd /var/www/rails/iris" Enter "ZEUSSOCK=/tmp/.zeus.sock zeus start" Enter
+tmux send-keys "cd $VAGRANTFILE" Enter "vagrant ssh" Enter 
+tmux send-keys "cd $VAGRANT_PROJECT_DIR/$PROJECT_NAME" Enter "zeus start" Enter
 
 # Rails Server
 tmux select-pane -t 3
-sleep 5
-tmux send-keys "cd /Projects/dboxes" Enter "vagrant ssh" Enter 
-tmux send-keys "cd /var/www/rails/iris" Enter "zeus server -b 0.0.0.0" Enter
+sleep .3
+tmux send-keys "cd $VAGRANTFILE" Enter "vagrant ssh" Enter 
+tmux send-keys "cd $VAGRANT_PROJECT_DIR/$PROJECT_NAME" Enter "zeus server -b 0.0.0.0" Enter
 
-tmux new-window -t iris:2 -n "zeus test spec"
-tmux send-keys -t iris:2 "cd /Projects/dboxes" Enter "vagrant ssh" Enter "cd /var/www/rails/iris" Enter "sleep 5" Enter "zeus test spec"
+# Test Window
+tmux new-window -t $PROJECT_NAME:2 -n "zeus test spec"
+tmux send-keys -t $PROJECT_NAME:2 "cd $VAGRANTFILE" Enter "vagrant ssh" Enter "cd $VAGRANT_PROJECT_DIR/$PROJECT_NAME" Enter "zeus test spec"
 
-tmux new-window -t iris:3 -n "database"
-tmux send-keys -t iris:3 "psql -h 127.0.0.1 -p 5432 -U dbadmin datalink_development"
+# DB Window
+tmux new-window -t $PROJECT_NAME:3 -n "database"
+tmux send-keys -t $PROJECT_NAME:3 "psql -h 127.0.0.1 -p 5432 -U dbadmin datalink_development"
 
-tmux select-window -t iris:1
+tmux select-window -t $PROJECT_NAME:1
 
-tmux a -t iris
+tmux a -t $PROJECT_NAME

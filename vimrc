@@ -67,9 +67,11 @@ noremap <Leader>q :q!<CR>
 noremap <Leader>Q :qa!<CR>
 
 " Tabs
-noremap <Leader>t :tabnew<CR>
-noremap <Leader>n <esc>:tabprevious<CR>
-noremap <Leader>m <esc>:tabnext<CR>
+"noremap <Leader>t :tabnew<CR>
+"noremap <Leader>n <esc>:tabprevious<CR>
+"noremap <Leader>m <esc>:tabnext<CR>
+
+noremap <Leader>n :NERDTree<CR>
 
 " Files and Search
 noremap <Leader>f :Files<CR>

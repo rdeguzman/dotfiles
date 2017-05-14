@@ -20,15 +20,12 @@ alias b="bundle exec"
 alias gpl='git pull'
 alias gplrm='git pull --rebase origin master'
 alias gplrd='git pull --rebase origin develop'
-alias gplrb='git pull --rebase origin $1'
 alias gp='git push'
 alias gpob='git push origin $1'
 alias gpod='git push origin develop'
-alias gpbd='git push bitbucket develop'
 alias gpom='git push origin master'
-alias gpbm='git push bitbucket master'
 alias gpomt='git push origin master --tags'
-alias gd='git diff'
+alias gdiff='git diff'
 alias gc='git commit'
 alias gca='git commit --amend'
 alias ga='git add'
@@ -40,7 +37,6 @@ alias gchangelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELO
 alias greset='git reset --hard'
 alias grollback='git reset --soft HEAD~1'
 alias gsmflush='git submodule foreach git reset --hard'
-#alias glog='git log --graph --decorate --oneline'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
 # rails
@@ -56,8 +52,5 @@ alias zserver='zeus server -b 0.0.0.0'
 # jump
 alias ji='cd /Projects/rails/iris'
 alias jp='cd /Projects/rails/perseus'
-alias jpp='cd /Projects/rails/poseidon'
 alias jd='cd /Projects/rails/dfms-rails'
 alias jdips='cd /Projects/dips'
-alias jdipsl='cd /Projects/dips/dips-listener'
-alias jdipsc='cd /Projects/dips/dips-client'

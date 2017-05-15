@@ -32,3 +32,5 @@ export PATH=$PATH:/usr/local/lib/node_modules
 export FZF_DEFAULT_OPTS='--no-height --no-reverse'
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+[[ -f ~/.secret ]] && . ~/.secret

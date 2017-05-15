@@ -1,0 +1,1 @@
+slack-cleaner --token $SLACK_TOKEN --message --channel $1 --user "*" --perform

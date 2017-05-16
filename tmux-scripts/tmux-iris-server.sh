@@ -27,7 +27,7 @@ tmux send-keys "cd $VAGRANT_PROJECT_DIR/$PROJECT_NAME" Enter "zeus start" Enter
 
 # Rails Server
 tmux select-pane -t 3
-sleep .3
+sleep 5
 tmux send-keys "cd $VAGRANTFILE" Enter "vagrant ssh" Enter 
 tmux send-keys "cd $VAGRANT_PROJECT_DIR/$PROJECT_NAME" Enter "zeus server -b 0.0.0.0" Enter
 

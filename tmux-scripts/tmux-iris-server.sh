@@ -17,19 +17,19 @@ tmux split-window -v -p 50
 # NPM Start
 tmux select-pane -t 2
 sleep .3
-tmux send-keys "cd /Projects/rails/$PROJECT_NAME/" Enter "npm start"
+tmux send-keys "cd /Projects/rails/$PROJECT_NAME/" Enter "sleep 10" Enter "npm start" Enter
 
 # ZStart Pane
 tmux select-pane -t 1
 sleep .3
-tmux send-keys "cd $VAGRANTFILE" Enter "vagrant ssh" Enter 
-tmux send-keys "cd $VAGRANT_PROJECT_DIR/$PROJECT_NAME" Enter "zeus start" Enter
+tmux send-keys "cd $VAGRANTFILE" Enter "vagrant ssh" Enter
+tmux send-keys "cd $VAGRANT_PROJECT_DIR/$PROJECT_NAME" Enter "sleep 2" Enter "zeus start" Enter
 
 # Rails Server
 tmux select-pane -t 3
-sleep 5
-tmux send-keys "cd $VAGRANTFILE" Enter "vagrant ssh" Enter 
-tmux send-keys "cd $VAGRANT_PROJECT_DIR/$PROJECT_NAME" Enter "zeus server -b 0.0.0.0" Enter
+sleep 5 #gives time for vagrant pane 1 not to collide
+tmux send-keys "cd $VAGRANTFILE" Enter "vagrant ssh" Enter
+tmux send-keys "cd $VAGRANT_PROJECT_DIR/$PROJECT_NAME" Enter "sleep 5" Enter "zeus server -b 0.0.0.0" Enter
 
 # Test Window
 tmux new-window -t $PROJECT_NAME:2 -n "zeus test spec"

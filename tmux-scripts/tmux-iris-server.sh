@@ -35,9 +35,14 @@ tmux send-keys "cd $VAGRANT_PROJECT_DIR/$PROJECT_NAME" Enter "sleep 5" Enter "ze
 tmux new-window -t $PROJECT_NAME:2 -n "zeus test spec"
 tmux send-keys -t $PROJECT_NAME:2 "cd $VAGRANTFILE" Enter "vagrant ssh" Enter "cd $VAGRANT_PROJECT_DIR/$PROJECT_NAME" Enter "zeus test spec"
 
+# vagrant Window
+tmux new-window -t $PROJECT_NAME:3 -n "vag ssh"
+sleep 5 #gives time for vagrant pane 1 not to collide
+tmux send-keys "cd $VAGRANTFILE" Enter "vagrant ssh" Enter "cd /var/www/rails/iris-builds" Enter
+
 # DB Window
-tmux new-window -t $PROJECT_NAME:3 -n "database"
-tmux send-keys -t $PROJECT_NAME:3 "psql -h 127.0.0.1 -p 5432 -U dbadmin datalink_development"
+tmux new-window -t $PROJECT_NAME:4 -n "database"
+tmux send-keys -t $PROJECT_NAME:4 "psql -h 127.0.0.1 -p 5432 -U dbadmin datalink_development"
 
 tmux select-window -t $PROJECT_NAME:1
 

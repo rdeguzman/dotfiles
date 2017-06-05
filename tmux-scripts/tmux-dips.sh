@@ -9,7 +9,7 @@ tmux new-window -t dips:3 -n "dips-api"
 tmux send-keys -t dips:3 "cd /Projects/dips/dips-api" Enter
 
 tmux new-window -t dips:4 -n "rails-server"
-tmux send-keys -t dips:4 "cd /Projects/dips/dips-api" Enter "rails s -b 0.0.0.0 -p 3003" Enter
+tmux send-keys -t dips:4 "cd /Projects/dips/dips-api" Enter "rails s -b 0.0.0.0 -p 8081" Enter
 
 tmux new-window -t dips:5 -n "dips-listener"
 tmux send-keys -t dips:5 "cd /Projects/dips/dips-listener" Enter

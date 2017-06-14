@@ -44,6 +44,11 @@ tmux send-keys "cd $VAGRANTFILE" Enter "vagrant ssh" Enter "cd /var/www/rails/ir
 tmux new-window -t $PROJECT_NAME:4 -n "database"
 tmux send-keys -t $PROJECT_NAME:4 "psql -h 127.0.0.1 -p 5432 -U dbadmin datalink_development"
 
+# Perseus Window
+tmux new-window -t $PROJECT_NAME:5 -n "perseus"
+sleep 5 #gives time for vagrant pane 
+tmux send-keys -t $PROJECT_NAME:5 "cd $VAGRANTFILE" Enter "vagrant ssh" Enter "cd $VAGRANT_PROJECT_DIR/perseus " Enter "rails s -b 0.0.0.0 -p 3005"
+
 tmux select-window -t $PROJECT_NAME:1
 
 tmux a -t $PROJECT_NAME

@@ -54,3 +54,6 @@ alias ji='cd /Projects/rails/iris'
 alias jp='cd /Projects/rails/perseus'
 alias jd='cd /Projects/rails/dfms-rails'
 alias jdips='cd /Projects/dips'
+
+# vnc
+alias vnc='open vnc://:secret@127.0.0.1:5900'

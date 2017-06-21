@@ -109,6 +109,9 @@ noremap <Leader>* :set nowrap<CR>
 set splitbelow
 set splitright
 
+" Disable paste
+set pastetoggle=<F2>
+
 "Use TAB to complete when typing words, else inserts TABs as usual.
 "Uses dictionary and source files to find matching words to complete.
 

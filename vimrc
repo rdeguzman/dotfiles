@@ -66,11 +66,6 @@ noremap <Leader>w :update<CR>
 noremap <Leader>q :q!<CR>
 noremap <Leader>Q :qa!<CR>
 
-" Tabs
-"noremap <Leader>t :tabnew<CR>
-"noremap <Leader>n <esc>:tabprevious<CR>
-"noremap <Leader>m <esc>:tabnext<CR>
-
 noremap <Leader>n :NERDTree<CR>
 "let g:NERDTreeMouseMode = 3 to get single-click behaviour.
 let NERDTreeShowHidden=1
@@ -145,6 +140,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'albfan/nerdtree-git-plugin'
+Plug 'thoughtbot/vim-rspec'
 
 " Initialize plugin system
 call plug#end()
@@ -169,3 +165,5 @@ let g:syntastic_ruby_mri_exec = "/Users/rupert/.rvm/rubies/ruby-2.3.1/bin/ruby"
 "let g:syntastic_javascript_checkers = ['standard']
 "let g:syntastic_javascript_standard_exec = 'standard'
 "let g:syntastic_javascript_standard_generic = 1
+
+map <Leader>t :call RunCurrentSpecFile()<CR>

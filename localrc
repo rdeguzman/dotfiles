@@ -37,3 +37,5 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # kafka
 export PATH=$PATH:/usr/local/kafka/bin
+export KAFKA_PORT='9092'
+export ZOOKEEPER_PORT='2181'

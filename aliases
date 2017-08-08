@@ -57,3 +57,6 @@ alias jdips='cd /Projects/dips'
 
 # vnc
 alias openvnc='open vnc://:secret@127.0.0.1:5900'
+
+# docker
+alias dps='docker ps -a'

@@ -1,0 +1,3 @@
+echo "stopping and removing container $1..."
+docker stop $1
+docker rm $1

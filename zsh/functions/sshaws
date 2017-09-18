@@ -1,0 +1,1 @@
+ssh -i ~/awsdatalink.pem $1

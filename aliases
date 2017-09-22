@@ -68,3 +68,7 @@ alias kafka_topic_list='kafka-topics.sh --list --zookeeper localhost:$ZOOKEEPER_
 
 alias kafka_console_producer='kafka-console-producer.sh --broker-list localhost:$KAFKA_PORT --topic $1'
 alias kafka_console_consumer='kafka-console-consumer.sh --bootstrap-server localhost:$KAFKA_PORT --topic $1'
+
+# aws
+alias awsdev='export AWS_PROFILE=dev'
+alias awsprod='export AWS_PROFILE=prod'

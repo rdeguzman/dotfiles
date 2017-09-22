@@ -124,6 +124,17 @@ function! Tab_Or_Complete()
 endfunction
 :inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 
+function! SplitDebug(command)
+  let result = system(a:command)
+
+  "Open a new split and set it up
+  vsplit __ShowTest__
+  normal! ggdG
+  setlocal buftype=nofile
+
+  call append(0, result)
+endfunction
+
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
 

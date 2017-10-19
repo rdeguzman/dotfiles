@@ -29,7 +29,7 @@ tmux select-pane -t 3
 tmux send-keys "cd /Projects/rails/$APP/" Enter "sleep 1" Enter "docker-compose run app /bin/bash -l"
 
 tmux select-pane -t 4
-tmux send-keys "cd /Projects/rails/$APP/" Enter "vim" Enter
+tmux send-keys "cd /Projects/rails/$APP/" Enter
 
 tmux new-window -t $TMUX_SESSION:2 -n "iris-builds"
 tmux send-keys -t $TMUX_SESSION:2 "sleep 1" Enter "vag ssh" Enter "cd $VAGRANT_PROJECT_DIR/iris-builds" Enter

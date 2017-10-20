@@ -66,9 +66,9 @@ alias kafka_topic_create='kafka-topics.sh --create --zookeeper localhost:$ZOOKEE
 alias kafka_topic_delete='kafka-topics.sh --delete --zookeeper localhost:$ZOOKEEPER_PORT --topic $1'
 alias kafka_topic_list='kafka-topics.sh --list --zookeeper localhost:$ZOOKEEPER_PORT'
 
-alias kafka_console_producer='kafka-console-producer.sh --broker-list localhost:$KAFKA_PORT --topic $1'
-alias kafka_console_consumer='kafka-console-consumer.sh --bootstrap-server localhost:$KAFKA_PORT --topic $1'
+alias kafka_console_producer='kafka-console-producer.sh --broker-list $KAFKA_HOST:$KAFKA_PORT --topic $1'
+alias kafka_console_consumer='kafka-console-consumer.sh --bootstrap-server $KAFKA_HOST:$KAFKA_PORT --topic $1'
 
 # aws
-alias awsdev='export AWS_PROFILE=dev; export AWS_DEFAULT_REGION=ap-southeast-2'
-alias awsprod='export AWS_PROFILE=prod; export AWS_DEFAULT_REGION=ap-southeast-2'
+alias awsdev='export AWS_PROFILE=dev; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalinkdev'
+alias awsprod='export AWS_PROFILE=prod; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalink'

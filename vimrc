@@ -100,6 +100,10 @@ noremap <Leader>) :set mouse=a<CR>:set nu<CR>:GitGutterEnable<CR>
 noremap <Leader>8 :set wrap linebreak nolist<CR>
 noremap <Leader>* :set nowrap<CR>
 
+" Fold
+" To create a fold: visual highlight + zf
+noremap <space> za
+
 " Open splits more natural below and right
 set splitbelow
 set splitright

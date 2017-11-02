@@ -1,3 +1,9 @@
+# Project specific aliases
+alias ji='cd /Projects/rails/iris'
+alias jp='cd /Projects/rails/perseus'
+alias jd='cd /Projects/rails/dfms-rails'
+alias jdips='cd /Projects/dips'
+
 # exit
 alias x='exit'
 

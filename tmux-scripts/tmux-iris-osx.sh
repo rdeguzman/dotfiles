@@ -1,9 +1,9 @@
 #!/bin/zsh
-VAGRANTFILE="/Projects/dboxes"
 VAGRANT_PROJECT_DIR="/var/www/rails"
 TMUX_SESSION="iris-osx"
 APP="iris"
 
+cd /Projects/rails/$APP/
 tmux new-session -s $TMUX_SESSION -n "$TMUX_SESSION" -d
 
 #|----------------|-------------------|

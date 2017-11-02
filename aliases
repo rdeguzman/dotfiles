@@ -45,19 +45,6 @@ alias renvd='export RAILS_ENV=development;echo "Rails env set to $RAILS_ENV"'
 alias renvt='export RAILS_ENV=test;echo "Rails env set to $RAILS_ENV"'
 alias renvp='export RAILS_ENV=production;echo "Rails env set to $RAILS_ENV"'
 
-# zeus
-alias zstart='zeus start'
-alias zserver='zeus server -b 0.0.0.0'
-
-# jump
-alias ji='cd /Projects/rails/iris'
-alias jp='cd /Projects/rails/perseus'
-alias jd='cd /Projects/rails/dfms-rails'
-alias jdips='cd /Projects/dips'
-
-# vnc
-alias openvnc='open vnc://:secret@127.0.0.1:5900'
-
 # docker
 alias dps='docker ps -a'
 
@@ -70,5 +57,10 @@ alias kafka_console_producer='kafka-console-producer.sh --broker-list $KAFKA_HOS
 alias kafka_console_consumer='kafka-console-consumer.sh --bootstrap-server $KAFKA_HOST:$KAFKA_PORT --topic $1'
 
 # aws
-alias awsdev='export AWS_PROFILE=dev; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalinkdev'
-alias awsprod='export AWS_PROFILE=prod; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalink'
+alias aws_staging='export AWS_PROFILE=staging_default; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalinkdev'
+alias aws_staging_lead='export AWS_PROFILE=staging_devopslead; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalinkdev'
+alias aws_staging_admin='export AWS_PROFILE=staging_admin; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalinkdev'
+
+alias aws_prod='export AWS_PROFILE=prod_default; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalink'
+alias aws_prod_lead='export AWS_PROFILE=prod_devopslead; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalink'
+alias aws_prod_admin='export AWS_PROFILE=prod_admin; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalink'

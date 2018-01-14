@@ -1,4 +1,6 @@
 #!/bin/bash
+# See https://api.slack.com/custom-integrations/legacy-tokens
+
 ORG=$1
 
 if [ "$ORG" = "datalink" ]; then

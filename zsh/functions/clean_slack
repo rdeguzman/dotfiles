@@ -1,1 +1,10 @@
-slack-cleaner --token $SLACK_TOKEN --message --channel $1 --user "*" --perform
+#!/bin/bash
+ORG=$1
+
+if [ "$ORG" = "datalink" ]; then
+  SLACK_TOKEN=$SLACK_TOKEN_DATALINK
+elif [ "$ORG" = "pinoy" ]; then
+  SLACK_TOKEN=$SLACK_TOKEN_PINOY
+fi
+
+slack-cleaner --token $SLACK_TOKEN --message --channel $2 --user "*" --perform

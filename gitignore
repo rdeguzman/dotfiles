@@ -3,15 +3,24 @@
 *~
 .*.swp
 
+# Rails
 .bundle
 .project
 db/*.sqlite3
-log/*.log
+
+/log*
 *.log
 /tmp/
 tmp/**/*
 tmp/*
 *.tmproj
+!/log/.keep
+!/tmp/.keep
+
+/node_modules
+/yarn-error.log
+
+.byebug_history
 
 #IntellJ Idea
 .idea/workspace.xml

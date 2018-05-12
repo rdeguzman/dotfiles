@@ -1,1 +1,10 @@
-export ZEUSSOCK=/tmp/.zeus.sock
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# aws completer
+if [ -f /usr/local/bin/aws_completer ]; then
+  complete -C /usr/local/bin/aws_completer aws
+fi
+
+# secrets
+[ -f ~/.secret ] && source ~/.secret

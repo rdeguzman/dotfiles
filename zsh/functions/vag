@@ -1,2 +1,2 @@
-cd /Projects/dboxes
+cd /Projects/vagrant
 vagrant $1

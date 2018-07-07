@@ -25,17 +25,23 @@ export PATH=$PATH:/usr/local/lib/node_modules
 # yarn global node_modules
 #export PATH=$PATH:$(yarn global bin)
 
+# rvm
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting ???
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # fzf
 export FZF_DEFAULT_OPTS='--no-height --no-reverse'
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-[[ -f ~/.secret ]] && . ~/.secret
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # kafka
 export PATH=$PATH:/usr/local/kafka/bin
 export KAFKA_HOST='127.0.0.1'
 export KAFKA_PORT='9092'
 export ZOOKEEPER_PORT='2181'
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

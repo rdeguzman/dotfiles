@@ -5,15 +5,14 @@
 # /Library/Java/JavaVirtualMachines
 # Note these are not single quotes
 export JAVA_HOME=`/usr/libexec/java_home`
-export ANDROID_HOME="/Developer/android-sdk-macosx"
+#export ANDROID_HOME="/Developer/android-sdk-macosx"
 
 # SCM
 export SVN_EDITOR=vim
-export CVSROOT=:pserver:rupert@cvs.datalink.loc:/cvs/datalink
 export GIT_HOME="/usr/local/git"
 
 # Android
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+#export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 export PATH=$PATH:~/.dotfiles/cheat_commands/
 

@@ -23,11 +23,14 @@ tmp/*
 .byebug_history
 
 #IntellJ Idea
-.idea/workspace.xml
-.idea/tasks.xml
+#.idea/workspace.xml
+#.idea/tasks.xml
+.idea
 
 #Project specific
 /data
 
 vim/.netwrhist
 vim/plugged
+
+landchecker

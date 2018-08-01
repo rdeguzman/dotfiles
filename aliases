@@ -47,20 +47,3 @@ alias renvp='export RAILS_ENV=production;echo "Rails env set to $RAILS_ENV"'
 
 # docker
 alias dps='docker ps -a'
-
-# kafka
-alias kafka_topic_create='kafka-topics.sh --create --zookeeper localhost:$ZOOKEEPER_PORT --replication-factor 1 --partitions 1 --topic $1'
-alias kafka_topic_delete='kafka-topics.sh --delete --zookeeper localhost:$ZOOKEEPER_PORT --topic $1'
-alias kafka_topic_list='kafka-topics.sh --list --zookeeper localhost:$ZOOKEEPER_PORT'
-
-alias kafka_console_producer='kafka-console-producer.sh --broker-list $KAFKA_HOST:$KAFKA_PORT --topic $1'
-alias kafka_console_consumer='kafka-console-consumer.sh --bootstrap-server $KAFKA_HOST:$KAFKA_PORT --topic $1'
-
-# aws
-alias aws_staging='export AWS_PROFILE=staging_default; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalinkdev'
-alias aws_staging_lead='export AWS_PROFILE=staging_devopslead; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalinkdev'
-alias aws_staging_admin='export AWS_PROFILE=staging_admin; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalinkdev'
-
-alias aws_prod='export AWS_PROFILE=prod_default; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalink'
-alias aws_prod_lead='export AWS_PROFILE=prod_devopslead; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalink'
-alias aws_prod_admin='export AWS_PROFILE=prod_admin; export AWS_DEFAULT_REGION=ap-southeast-2; export TF_VAR_key_pair=awsdatalink'

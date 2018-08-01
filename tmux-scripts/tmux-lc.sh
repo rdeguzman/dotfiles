@@ -2,7 +2,7 @@
 TMUX_SESSION="lc"
 
 cd /Projects
-tmux new-session -s $TMUX_SESSION -n "services" -d
+tmux new-session -s $TMUX_SESSION -n "server" -d
 
 #|----------------|-------------------|
 #|                |                   |

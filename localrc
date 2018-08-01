@@ -28,6 +28,9 @@ export PATH=$PATH:/usr/local/lib/node_modules
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting ???
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+# rails
+export RAILS_ENV=development
+
 # fzf
 export FZF_DEFAULT_OPTS='--no-height --no-reverse'
 export FZF_DEFAULT_COMMAND='ag -g ""'

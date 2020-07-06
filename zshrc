@@ -10,9 +10,6 @@
 [[ -f ~/.secret ]] && . ~/.secret
 
 # use seperate dotfile for landchecker
-#[[ -f ~/.datalink ]] && . ~/.datalink
-
-# use seperate dotfile for landchecker
 [[ -f ~/.landchecker ]] && . ~/.landchecker
 
 # tabtab source for serverless package

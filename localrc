@@ -21,6 +21,9 @@ export PATH=$PATH:~/.dotfiles/tmux-scripts/
 # node.js modules
 export PATH=$PATH:/usr/local/lib/node_modules
 
+# GDAL
+export PATH=$PATH:/Library/Frameworks/GDAL.framework/Programs
+
 # yarn global node_modules
 #export PATH=$PATH:$(yarn global bin)
 
